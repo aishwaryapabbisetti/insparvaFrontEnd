@@ -1,4 +1,9 @@
 {% extends "baseTemplate.html" %}
 
 {% block body %}
+
+    {% for ele in data.options %}
+        {{ ele }} <br>
+    {% endfor %}
+
 {% endblock %}
