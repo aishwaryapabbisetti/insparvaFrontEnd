@@ -8,13 +8,22 @@
 {% endblock head %}
 
 {% block body %}
-    <div class="container">
-        <div class="page-header">
-            <h1>select2 with pagination</h1>
-            <p>for improved performance with large data sets (20 000 items)</p>
+    <form method="post" action="{{ url_for('get_data') }}">
+        <div class="container">
+            <p></p>
+            <br>
+            <p>Type your Name:</p>  <input type="text" name="testName"><br>
+            <div class="page-header">
+                <h1>select2 with pagination</h1>
+                <p>for improved performance with large data sets (20 000 items)</p>
+            </div>
+            <input name="select2" id="test" style="width:100%;" placeholder="type a number, scroll for more results" />
+            <p></p>
+            <div>
+                <input type="submit">
+            </div>
         </div>
-        <input id="test" style="width:100%;" placeholder="type a number, scroll for more results" />
-    </div>
+    </form>
 {% endblock body %}
 
 {% block script %}

@@ -4,5 +4,4 @@ app = Flask(__name__)
 
 app.debug = True
 
-from views import routes
-
+from views import select2, getData
