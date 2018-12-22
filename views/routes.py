@@ -9,5 +9,5 @@ def index():
 
 @app.route("/test")
 def get_context():
-    context = { 'message': 'Hope it works' }
-    return render_template('baseTemplate.html', title='Home', context=context)
+    context = {'message': 'Hope it works'}
+    return render_template('select2.html', title='Home', context=context)
